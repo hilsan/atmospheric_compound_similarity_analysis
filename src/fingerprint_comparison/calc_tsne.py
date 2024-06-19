@@ -99,8 +99,6 @@ def run_tsne(data, perplexity, init, n_jobs):
 
 def main():
     logger = logging.getLogger(__name__)
-bespe_arguments = ["-d", "data/Example", "-b", "1", "--only_bespe"]
-    add_BESPE.main(parser.parse_args(bespe_arguments))
     locs = args.locations
     fptype = args.fptype
     init = args.init
