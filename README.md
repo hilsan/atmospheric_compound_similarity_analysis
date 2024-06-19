@@ -1,5 +1,5 @@
 # Similarity analysis for atmospheric compounds 
-A compound similarity analysis of atmospheric compounds conducted on atmospheric datasets from X, Y, Z publications and XX, YY, ZZ, DD datasets. The analysis is conducted in three parts. 1) analysis of presence of atmospherically relevant fragments, molecular size and atomic ratios. 2) Comparison of molecular fingerprints (MACCS and RDKit topological fingerprint) through TSNE clustering. 3) Comparison of molecular fingerprint by calculating pairwise similarities between all molecules in two datasets. This project requires a version of aprl_ssp (https://github.com/stakahama/aprl-ssp/tree/master/SMARTSpatterns) and my other project MolAnalysis (https://gitlab.com/hilsan/MolAnalysis.git). 
+A compound similarity analysis of atmospheric compounds conducted on atmospheric datasets from Wang et al. (https://doi.org/10.5194/acp-17-7529-2017), , Isaacman-VanVertz and Aumont (https://doi.org/10.5194/acp-21-6541-2021), Tabor et al. (https://doi.org/10.1039/C9TA03219C ) datasets, and non atmospheric datasets from https://massbank.eu/MassBank/, https://mona.fiehnlab.ucdavis.edu/, Ramakrishnan et al. (10.1038/sdata.2014.22) and Krabrov et al. (DOI: 10.1039/d2cp03966d). The analysis is conducted in three parts. 1) analysis of presence of atmospherically relevant fragments, molecular size and atomic ratios. 2) Comparison of molecular fingerprints (MACCS and RDKit topological fingerprint) through TSNE clustering. 3) Comparison of molecular fingerprint by calculating pairwise similarities between all molecules in two datasets. This project requires a version of aprl_ssp (https://github.com/stakahama/aprl-ssp/tree/master/SMARTSpatterns) and my other project MolAnalysis (https://gitlab.com/hilsan/MolAnalysis.git). Note that there are hard coded paths in some scripts that will need updating depending on your setup and file system.
 
 # Analysis and data processing:
 # src:
@@ -23,7 +23,7 @@ A compound similarity analysis of atmospheric compounds conducted on atmospheric
 
 # Project run and visualization 
 # notebook:
- 'notebook/run_project.ipynb' - Outlines the sequence of commands to project analysis. This assumes that there exists a data/raw folder with subfolders: gecko(txt with a list of SMILES), mb_eu (msp file), mona/all/ (msp file), nablaDFT (summary.csv from article supplementary), qm9/xyz/ (xyz file for each molecule), quinones (), wang (with Supporting information CSV.csv). For the manuscript, all datasets were collected 8th of January, 2024.
+ 'notebook/run_project.ipynb' - Outlines the sequence of commands to project analysis. This assumes that there exists a data/raw folder with subfolders: gecko(txt with a list of SMILES), mb_eu (msp file), mona/all/ (msp file), nablaDFT (csv file), qm9/xyz/ (xyz file for each molecule), quinones (csv file), wang (with Supporting information CSV.csv). For the manuscript, all datasets were collected 8th of January, 2024.
 
  'notebook/for_manuscript.ipynb' - Includes code to create figures for manuscript from.
  'notebook/psat.ipynb' - Code to create plot comparing GeckoQ vapor pressures to those from Handbook of Chemistry and Physics
