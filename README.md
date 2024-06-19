@@ -28,7 +28,7 @@ A compound similarity analysis of atmospheric compounds conducted on atmospheric
  'notebook/for_manuscript.ipynb' - Includes code to create figures for manuscript from.
  'notebook/psat.ipynb' - Code to create plot comparing GeckoQ vapor pressures to those from Handbook of Chemistry and Physics
 
- # data and reports empty folders. First for putting the raw data (see above for instructions) and second where to write figures and analysis.
+ data and reports empty folders. First for putting the raw data (see above for instructions) and second where to write figures and analysis.
  
 
 
