@@ -1,7 +1,7 @@
 # Similarity analysis for atmospheric compounds 
 
 
-Published version at  [https://doi.org/10.5281/zenodo.14007731 ](https://zenodo.org/records/14107768).  
+Published version at https://zenodo.org/records/14107768.
 
 
 A compound similarity analysis of atmospheric compounds conducted on atmospheric datasets from Wang et al. (https://doi.org/10.5194/acp-17-7529-2017), , Isaacman-VanVertz and Aumont (https://doi.org/10.5194/acp-21-6541-2021), Tabor et al. (https://doi.org/10.1039/C9TA03219C ) datasets, and non atmospheric datasets from https://massbank.eu/MassBank/, https://mona.fiehnlab.ucdavis.edu/, Ramakrishnan et al. (10.1038/sdata.2014.22) and Krabrov et al. (DOI: 10.1039/d2cp03966d). The analysis is conducted in three parts. 1) analysis of presence of atmospherically relevant fragments, molecular size and atomic ratios. 2) Comparison of molecular fingerprints (MACCS and RDKit topological fingerprint) through TSNE clustering. 3) Comparison of molecular fingerprint by calculating pairwise similarities between all molecules in two datasets. This project requires a version of aprl_ssp (https://github.com/stakahama/aprl-ssp/tree/master/SMARTSpatterns) and my other project MolAnalysis (https://gitlab.com/hilsan/MolAnalysis.git, https://doi.org/10.5281/zenodo.14007835). Note that there are hard coded paths in some scripts that will need updating depending on your setup and file system.
