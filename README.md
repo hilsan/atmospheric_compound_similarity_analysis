@@ -27,7 +27,10 @@ A compound similarity analysis of atmospheric compounds conducted on atmospheric
  3. fingerprint_comparison:
         calc_tsne.py  - perform a t-SNE analysis of two datasets 
         compare_fps.py - perform a tanimoto similarity analysis of two dataset files. 
+        process_max_similarity_ref.py - reads all tanimoto similarities in reference-to-reference directory, removes diagonal ones, and returns nearest neighbor in data set
+        process_max_similarity.py - reads all tanimoto similarities in one tanimoto subcomparison and returns the highest similarity in each column and row separately. 
         sum_bins.py - post analysis of the tanimoto similarity statistics in a directory.
+        bin_sum_max_sim_row.py - post analysis of nearest neighbor tanimoto similarity analysis in a directory (not needed for reference-to-reference comparison)
 
 
 # Project run and visualization 
@@ -36,6 +39,8 @@ A compound similarity analysis of atmospheric compounds conducted on atmospheric
 
  'notebook/for_manuscript.ipynb' - Includes code to create figures for manuscript from.
  'notebook/psat.ipynb' - Code to create plot comparing GeckoQ vapor pressures to those from Handbook of Chemistry and Physics
+
+ 'notebook/calculate_max_similarity.ipynb' - Code to analyse and visualise nearest neighbor similarities. 
 
  data and reports empty folders. First for putting the raw data (see above for instructions) and second where to write figures and analysis.
  
